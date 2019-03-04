@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MDIA 1472 Mobile Web Assignments 2</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <p class="logo">
+          <a href="#"><img src="img/logo.png" alt="logo"/></a>
+        </p>
+        <i class="fas fa-bars" id="navBar" onclick="toggleMenu();"></i>
+        <nav id="nav">
+          <ul id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign In / Sign Up</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div id="topImage">
+          <a href="#" id="heroImage">
+            <div id="topLink">
+              <h1>Image of the Day</h1>
+              <p>Artist: Paweł Czerwiński</p>
+              <p class="topDownload">Download this image</p>
+            </div>
+          </a>
+        </div>
+
+        <section class="imagesCategory">
+          <h2>Popular images</h2>
+          <ul>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/301/" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/401/" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/501/" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/601/" alt=""/></a>
+            </li>
+          </ul>
+          <p class="listLinks"><a href="#">See this list</a></p>
+        </section>
+
+        <section class="imagesCategory">
+          <h2>Choose from Colors</h2>
+          <ul>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/200/" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/300/" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/400/" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/500/" alt=""/></a>
+            </li>
+          </ul>
+          <p class="listLinks"><a href="#">See this list</a></p>
+        </section>
+
+        <section class="imagesCategory">
+          <h2>Choose from Mood</h2>
+          <ul>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/202/" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/320/" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/420/" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/502/" alt=""/></a>
+            </li>
+          </ul>
+          <p class="listLinks"><a href="#">See this list</a></p>
+        </section>
+
+        <section class="imagesCategory">
+          <h2>Choose from Artists</h2>
+          <ul>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/210/" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/310/" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/410/" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="https://picsum.photos/300/510/" alt=""/></a>
+            </li>
+          </ul>
+          <p class="listLinks"><a href="#">See this list</a></p>
+        </section>
+      </main>
+
+      <footer>
+        <ul>
+          <li><a href="#">To Top</a></li>
+        </ul>
+        <p class="logo">
+          <a href="#"><img src="img/logo.png" alt="logo"/></a>
+        </p>
+      </footer>
+    </div>
+    <!-- toggle navigation menu -->
+    <script>
+      function toggleMenu() {
+        var nav = document.getElementById("nav");
+        var navBar = document.getElementById("navBar");
+        nav.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
